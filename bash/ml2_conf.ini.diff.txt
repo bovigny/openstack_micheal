@@ -1,0 +1,16 @@
+221c
+enable_ipset = True
+.
+205c
+vni_ranges = 1:1000
+.
+151c
+flat_networks = provider
+.
+102c
+type_drivers = flat,vlan,vxlan
+tenant_network_types = vxlan
+mechanism_drivers = linuxbridge,l2population
+extension_drivers = port_security
+.
+w

@@ -1,0 +1,5 @@
+1a
+nova_metadata_ip = daplab-cn-8.fri.lan
+metadata_proxy_shared_secret = leo7_woo
+.
+w

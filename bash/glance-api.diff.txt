@@ -1,0 +1,27 @@
+3957c
+flavor = keystone
+.
+3570d
+3548d
+3386d
+3178a
+uth_uri = http://daplab-cn-8.fri.lan:5000
+auth_url = http://daplab-cn-8.fri.lan:35357
+memcached_servers = daplab-cn-8.fri.lan:11211
+auth_type = password
+project_domain_name = default
+user_domain_name = default
+project_name = service
+username = glance
+password = leo7_woo
+.
+1838c
+stores = file,http
+default_store = file
+filesystem_store_datadir = /var/lib/glance/images/
+.
+1721a
+connection = mysql+pymysql://glance:leo7_woo@daplab-cn-8.fri.lan/glance
+.
+2d
+w

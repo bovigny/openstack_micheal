@@ -1,0 +1,4 @@
+2,3c
+server daplab-cn-8.fri.lan iburst
+.
+w

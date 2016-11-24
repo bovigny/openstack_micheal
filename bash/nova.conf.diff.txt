@@ -1,0 +1,68 @@
+8336a
+vncserver_listen = $my_ip
+vncserver_proxyclient_address = $my_ip
+.
+6682c
+lock_path = /var/lib/nova/tmp
+.
+6460a
+url = http://daplab-cn-8.fri.lan:9696
+auth_url = http://daplab-cn-8.fri.lan:35357
+auth_type = password
+project_domain_name = default
+user_domain_name = default
+region_name = RegionOne
+project_name = service
+username = neutron
+password = leo7_woo
+service_metadata_proxy = True
+metadata_proxy_shared_secret = leo7_woo
+.
+5665c
+virt_type=kvm
+.
+5429a
+auth_uri = http://daplab-cn-8.fri.lan:5000
+auth_url = http://daplab-cn-8.fri.lan:35357
+memcached_servers = daplab-cn-8.fri.lan:11211
+auth_type = password
+project_domain_name = default
+user_domain_name = default
+project_name = service
+username = nova
+password = leo7_woo
+.
+4802a
+api_servers = http://daplab-cn-8.fri.lan:9292
+.
+4652c
+connection = mysql+pymysql://nova:leo7_woo@daplab-cn-8.fri.lan/nova
+.
+4300c
+os_region_name = RegionOne
+.
+3736c
+# Use this endpoint to connect to Barbican, for example:/
+.
+3649a
+connection = mysql+pymysql://nova:leo7_woo@daplab-cn-8.fri.lan/nova_api
+.
+3168c
+compute_driver=libvirt.LibvirtDriver
+.
+600a
+#ram_allocation_ratio=3
+.
+416c
+#allow_resize_to_same_host=true
+
+.
+2c
+enabled_apis = osapi_compute,metadata
+transport_url = rabbit://openstack:leo7_woo@daplab-cn-8.fri.lan
+auth_strategy = keystone
+my_ip = 10.10.10.68
+use_neutron = True
+firewall_driver = nova.virt.firewall.NoopFirewallDriver
+.
+w

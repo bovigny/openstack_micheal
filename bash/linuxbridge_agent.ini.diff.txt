@@ -1,0 +1,13 @@
+169c
+enable_vxlan = True
+local_ip = 10.10.10.68
+l2_population = True
+.
+150c
+enable_security_group = True
+firewall_driver = neutron.agent.linux.iptables_firewall.IptablesFirewallDriver
+.
+133c
+physical_interface_mappings = provider:enp1s0f0
+.
+w

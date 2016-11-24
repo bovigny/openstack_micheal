@@ -1,0 +1,26 @@
+3918c
+driver = messagingv2
+.
+3738c
+lock_path = /var/lib/cinder/tmp
+.
+3548c
+auth_uri = http://daplab-cn-8.fri.lan:5000
+auth_url = http://daplab-cn-8.fri.lan:35357
+memcached_servers = daplab-cn-8.fri.lan:11211
+auth_type = password
+project_domain_name = default
+user_domain_name = default
+project_name = service
+username = cinder
+password = leo7_woo
+.
+3370c
+connection = mysql+pymysql://cinder:leo7_woo@daplab-cn-8.fri.lan/cinder
+.
+2c
+transport_url = rabbit://openstack:leo7_woo@daplab-cn-8.fri.lan
+auth_strategy = keystone
+my_ip = 10.10.10.68
+.
+w

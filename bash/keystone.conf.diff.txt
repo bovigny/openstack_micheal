@@ -1,0 +1,10 @@
+2642c
+expiration = 500000
+.
+2611a
+provider = fernet
+.
+614a
+connection = mysql+pymysql://keystone:leo7_woo@daplab-cn-8.fri.lan/keystone
+.
+w

@@ -1,0 +1,62 @@
+8336a
+enabled = True
+vncserver_listen = 0.0.0.0
+vncserver_proxyclient_address = $my_ip
+novncproxy_base_url = http://daplab-cn-8.fri.lan:6080/vnc_auto.html
+
+.
+6862c
+driver = messagingv2
+.
+6682c
+lock_path = /var/lib/nova/tmp
+.
+6460a
+url = http://daplab-cn-8.fri.lan:9696
+auth_url = http://daplab-cn-8.fri.lan:35357
+auth_type = password
+project_domain_name = default
+user_domain_name = default
+region_name = RegionOne
+project_name = service
+username = neutron
+password = leo7_woo
+.
+5665c
+virt_type=kvm
+.
+5430c
+auth_uri = http://daplab-cn-8.fri.lan:5000
+auth_url = http://daplab-cn-8.fri.lan:35357
+memcached_servers = daplab-cn-8.fri.lan:11211
+auth_type = password
+project_domain_name = default
+user_domain_name = default
+project_name = service
+username = nova
+password = leo7_woo
+.
+4802a
+api_servers = http://daplab-cn-8.fri.lan:9292
+.
+3168c
+compute_driver=libvirt.LibvirtDriver
+.
+416c
+#allow_resize_to_same_host=true
+.
+2a
+
+instance_usage_audit = True
+instance_usage_audit_period = hour
+notify_on_state_change = vm_and_task_state
+.
+1a
+enabled_apis = osapi_compute,metadata
+transport_url = rabbit://openstack:leo7_woo@daplab-cn-8.fri.lan
+auth_strategy = keystone
+my_ip =  10.10.10.69
+use_neutron = True
+firewall_driver = nova.virt.firewall.NoopFirewallDriver
+.
+w

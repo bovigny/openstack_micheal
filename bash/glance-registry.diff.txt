@@ -1,0 +1,29 @@
+1877c
+flavor = keystone
+.
+1501c
+rabbit_host = daplab-cn-8.fri.lan
+rabbit_userid = openstack
+rabbit_password = leo7_woo
+.
+1479c
+driver = messagingv2
+.
+1128c
+uth_uri = http://daplab-cn-8.fri.lan:5000
+auth_url = http://daplab-cn-8.fri.lan:35357
+memcached_servers = daplab-cn-8.fri.lan:11211
+auth_type = password
+project_domain_name = default
+user_domain_name = default
+project_name = service
+username = glance
+password = leo7_woo
+.
+1012c
+connection = mysql+pymysql://glance:leo7_woo@daplab-cn-8.fri.lan/glance
+.
+2c
+rpc_backend = rabbit
+.
+w
